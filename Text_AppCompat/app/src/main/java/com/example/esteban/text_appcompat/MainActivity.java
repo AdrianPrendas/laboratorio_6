@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         telefono=(TextView)findViewById(R.id.tel);
         correo=(TextView)findViewById(R.id.email);
         direccion=(TextView)findViewById(R.id.dir);
-        Usuario user=new Usuario(Integer.parseInt(ced.getText().toString()),nombre.getText().toString(),apellido.getText().toString(),ocupacion.getText().toString(),Integer.parseInt(telefono.getText().toString()),"",correo.getText().toString(),direccion.getText().toString());
+        Usuario user=new Usuario(Integer.parseInt(ced.getText().toString()),nombre.getText().toString(),apellido.getText().toString(),ocupacion.getText().toString(),Integer.parseInt(telefono.getText().toString()),"user",correo.getText().toString(),direccion.getText().toString());
         usuarioBL.create(user);
         Toast.makeText(this,"usuario registrado",Toast.LENGTH_LONG).show();
 
